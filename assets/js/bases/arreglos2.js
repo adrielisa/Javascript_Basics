@@ -27,10 +27,10 @@ console.log({ juegoBorrado, juegos });
 //
 let pos = 1;
 console.log( juegos );
-let juegosBorrados = juegos.splice( pos, 2); //Sintáxis de splice:   array.splice(start, deleteCount)
+let juegosBorrados = juegos.splice( pos, 2); //Sintáxis de splice:   array.splice(posición de donde se empieza a eliminar, cantidad de elementos a eliminar)
 console.log({ juegosBorrados, juegos });
 
-
+//Se usa para buscar el índice de un elemento en un arreglo
 let metroidIndex = juegos.indexOf('Metroid'); // CaSeSeNsItIvE
 console.log({ metroidIndex });
 
