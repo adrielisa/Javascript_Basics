@@ -1,6 +1,6 @@
 
 
-let a = 5;
+let a = 9;
 
 
 if ( a >= 10 ) { // undefined, null, una asignación
@@ -12,6 +12,7 @@ if ( a >= 10 ) { // undefined, null, una asignación
 
 // console.log('Fin de programa');
 
+//Se obtiene la fecha actual 
 const hoy = new Date(); // {}
 let dia = hoy.getDay(); // 0: Domingo, 1: lunes, 2: martes.....
 
