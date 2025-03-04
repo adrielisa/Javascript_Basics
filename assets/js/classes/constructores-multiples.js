@@ -1,32 +1,37 @@
 class Persona {
 
+    //Método estático que permite crear una instancia de Persona a partir de un objeto que contiene las propiedades dadas usando destructuración
     static porObjeto({ nombre, apellido, pais }) {
-        return new Persona( nombre, apellido, pais );
+        return new Persona(nombre, apellido, pais);
     }
 
-    constructor( nombre, apellido, pais ) {
-        this.nombre   = nombre;
+    //Constructor que inicializa las propiedades de instancia con los valores proporcionados como argumento
+    constructor(nombre, apellido, pais) {
+        this.nombre = nombre;
         this.apellido = apellido;
-        this.pais     = pais;
+        this.pais = pais;
     }
 
+    //Método de instancia que imprime la informaciión de la persona 
     getInfo() {
-        console.log(`info: ${ this.nombre }, ${ this.apellido }, ${ this.pais }`);
+        console.log(`info: nombre: ${this.nombre}, apellido: ${this.apellido}, país: ${this.pais}`);
     }
 }
 
-const nombre1   = 'Melissa',
-      apellido1 = 'Flores',
-      pais1     = 'Honduras';
+//Definición por variables
+const nombre1 = 'Melissa',
+    apellido1 = 'Flores',
+    pais1 = 'Honduras';
 
+//Definición por objeto
 const fher = {
-    nombre:   'Fernando',
+    nombre: 'Fernando',
     apellido: 'Herrera',
-    pais:     'Costa Rica'
-}      
+    pais: 'Costa Rica'
+}
 
-const persona1 = new Persona( nombre1, apellido1, pais1 );
-const persona2 = Persona.porObjeto( fher );
+const persona1 = new Persona(nombre1, apellido1, pais1);
+const persona2 = Persona.porObjeto(fher);
 
 
 persona1.getInfo();
